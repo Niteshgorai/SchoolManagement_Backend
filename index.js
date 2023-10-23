@@ -17,7 +17,7 @@ app.use(express.json({ limit: '10mb' }))
 app.use(cors())
 
 mongoose
-    .connect("mongodb+srv://niteshbsc7:7004717323@cluster4.nss9xkr.mongodb.net/?retryWrites=true&w=majority", {
+    .connect("mongodb+srv://niteshbsc7:7004717323@cluster4.nss9xkr.mongodb.net/STUDENT_MANAGEMENT?retryWrites=true&w=majority", {
         useNewUrlParser: true,
         useUnifiedTopology: true
     })
