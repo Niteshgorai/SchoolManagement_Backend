@@ -26,6 +26,14 @@ mongoose
 
 app.use('/', Routes);
 
+app.use(cors(
+    {
+        origin:["https://school-management-frontend-plum.vercel.app"],
+        methods:["POST", "GET", "PUT"],
+        credentials: true
+    }
+))
+
 app.listen(PORT, () => {
     console.log(`Server started at port no. ${PORT}`)
 })
